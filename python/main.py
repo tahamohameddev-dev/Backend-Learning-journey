@@ -213,3 +213,104 @@ while user_choice == "y":
 print("Goodbye!")
 
 
+# ####################################
+# 0.10 FOR LOOPS & EXPONENT FUNCTION
+# ####################################
+
+for i in range(3):
+    print(i)
+
+#  EXPONENT FUNCTION
+
+def raise_to_power(base_num, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+
+print(raise_to_power(2, 3))
+
+# ####################################
+# 0.11 2D LISTS
+# ####################################
+
+# 2D LISTS
+number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+for row in number_grid:
+    for col in row:
+        print(col)
+
+
+# ####################################
+# 0.12 TRY / EXCEPT
+# ####################################
+
+try:
+    value = 10 / 0
+    number = int(input("Enter a number: "))
+except ZeroDivisionError:
+    print("Divided by zero")
+except ValueError:
+    print("invalid input")
+
+# ####################################
+# 0.13 READING & WRITING FILES
+# ####################################
+
+employee_file = open("employees.txt", "r")
+print(employee_file.read())
+employee_file.close()
+
+# WRITING FILES
+
+employee_file = open("employees.txt", "a") 
+employee_file.write("\nTaha - Backend Engineer")
+employee_file.close()
+
+# ############################################
+# 0.14 MODULES, CLASSES & OBJECTS, INHERITANCE
+# ############################################
+
+import datetime
+current_time = datetime.datetime.now()
+
+# Classes & Objects
+
+
+class phone:
+    def __init__(self, type, color, is_android):
+        self.type = type
+        self.color = color
+        self.is_android = is_android
+
+# INHERITANCE
+
+
+    def is_infinix(self):
+        if self.type == "infinix":
+            return True
+        else:
+            return False
+
+type1 = phone("relmy", "read", True)
+type2 = phone("iphone", "black", "False")
+print(type1.is_android)
+print(type2.is_android)
+print(type1.is_infinix())
+
+
+
+
+# ####################################
+# 0.15 
+# ####################################
+
+
+
+
+
