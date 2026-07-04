@@ -1,15 +1,18 @@
-# 🚀 Backend Learning Journey
+# Backend Learning Journey
 
-A personal repository to document my step-by-step journey in learning Backend development and building strong programming logic.
+This repository documents my progress in learning backend development and building strong programming logic.
 
-## 📁 Repository Structure
+## Repository Structure
 
-* **`linux-git/`**: Contains all practices, commands, and notes from Phase 1 (Linux & Git/GitHub).
-* **`python/`**: Contains the master `main.py` file for learning Python syntax and practicing programming logic.
+* `linux-git/`: Contains notes, commands, and exercises from my initial training on Linux, Git, and GitHub.
+* `python/basics_practice/`: Contains my daily exercises and practice code to learn Python syntax and logic.
+* `python/projects/`: Contains real projects I am building to apply what I learn.
 
-## 🎯 Current Status
-* **Phase 1**: Completed successfully! 🎉
-* **Phase 2**: Python Basics & Problem Solving (In Progress...) 🐍
+## Progress Status
 
----
-💡 **Rule of the Journey:** `Build > Watch` .
+* Phase 1: Linux, Git, and GitHub - Completed.
+* Phase 2: Python Basics and Problem Solving - In Progress.
+
+## My Learning Rule
+
+Build more than you watch. I prioritize writing code and building projects to ensure I truly understand the concepts.
