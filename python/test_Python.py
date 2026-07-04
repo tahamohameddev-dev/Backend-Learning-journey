@@ -11,3 +11,8 @@ class phone:
             return True
         else:
             return False
+        
+class ifone(phone):
+    def string(self):
+        print(f"{self.type} is string")
+    

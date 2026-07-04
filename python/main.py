@@ -287,28 +287,25 @@ class phone:
         self.type = type
         self.color = color
         self.is_android = is_android
-
-# INHERITANCE
-
-
     def is_infinix(self):
         if self.type == "infinix":
             return True
         else:
             return False
+# INHERITANCE
+        
+class ifone(phone):
+    def string(self):
+        print(f"{self.type} is string")
 
 type1 = phone("relmy", "read", True)
 type2 = phone("iphone", "black", "False")
+type3 = ifone("ifone", "white", False)
 print(type1.is_android)
 print(type2.is_android)
 print(type1.is_infinix())
+type3.string()
 
-
-
-
-# ####################################
-# 0.15 
-# ####################################
 
 
 
