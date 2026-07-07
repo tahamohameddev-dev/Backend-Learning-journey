@@ -38,8 +38,8 @@ while True:
     elif choice == 5:
         delete_contact = input("Enter your name contact to delete: ")
         if delete_contact in contact:
-            confirm = input("Do you wont to delete thes contact y/n: ")
-            if confirm == 'y' or 'Y':
+            confirm = input("Do you wont to delete thes contact y/n: ").lower
+            if confirm == 'y':
                 contact.pop(delete_contact)
                 desplay_contact()
         else:
