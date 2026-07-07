@@ -43,7 +43,7 @@ def delete_task():
         return
     try:
         index = int(input("enter task number to delet: ")) -1
-        if index < 0 or index >= 0:
+        if index < 0 or index >= len(tasks):
             print("envalid number")
         else:
             removed = tasks.pop(index)
@@ -68,3 +68,4 @@ while True:
         break
     else:
         print("invalid choice. try again.")
+    

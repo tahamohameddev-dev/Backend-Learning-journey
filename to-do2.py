@@ -3,56 +3,58 @@
 tasks = []
 
 def show_menu():
-    print("\n--- to-do ---")
-    print("1. add tasks")
-    print("2. view tasks")
-    print("3. mark tasks an done!")
+    print("---to-do-list---")
+    print("1. add task")
+    print("2. view_task")
+    print("3. mark task as done")
     print("4. delete task")
-    print("5. exept")
+    print("5. Exept")
 
 def add_task():
     task = input("Enter your task: ")
     tasks.append({"task":task, "done":False})
-    print(f"task '{task}' added!")
+    print(f"task{task} added!")
 
 def view_task():
     if not tasks:
+        print("no task yet!")
         return
-    for index, task in enumerate(tasks, start=1):
+    print("\nyour task")
+    for index, task in enumerate(task, start=1):
         status = "✅" if task["done"] else "❌"
-        print(f"{index}. {task["task"]} [{status}]")
+        print(f"{index}. {task} [{status}] ")
 
 def mark_done():
     view_task()
     if not tasks:
-        return 
+        return
     try:
         index = int(input("Enter task number to mark done!")) -1
         if index < 0 or index >= len(tasks):
-            print("invallid number ")
-        
+            print("invallid number")
         else:
             tasks[index]["done"] = True
     except ValueError:
-        print("pleas enter a vallid number ")
+        print("pleas enter avallid number")
 
 def delete_task():
     view_task()
     if not tasks:
         return
     try:
-        index = int(input("Enter task number to delete")) -1
+        index = int(input("Enter task number to delete"))
         if index < 0 or index >= len(tasks):
-            print("Enter vallid number")
+            print("vallid number")
         else:
-            remove = tasks.pop(index)
-            print(f"rmove{'task'} delete sucssfully")
+            removed = tasks.opp(index)
+            print(f"{removed['task']} delete sucssfully")
     except ValueError:
-        print("please enter try nomber")
+        print("vallid number")
 
 while True:
     show_menu()
-    choice = input("Enter number (1-5): ")
+    choice = input("Enter an option (1-5): ")
+
     if choice == '1':
         add_task()
     elif choice == '2':
@@ -65,4 +67,5 @@ while True:
         print("goodby")
         break
     else:
-        print("Enter try number")
+        print("invalid choice. try again.")
+    
