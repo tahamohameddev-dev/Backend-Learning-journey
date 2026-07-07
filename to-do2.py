@@ -20,7 +20,7 @@ def view_task():
         print("no task yet!")
         return
     print("\nyour task")
-    for index, task in enumerate(task, start=1):
+    for index, task in enumerate(tasks, start=1):
         status = "✅" if task["done"] else "❌"
         print(f"{index}. {task} [{status}] ")
 
@@ -42,11 +42,11 @@ def delete_task():
     if not tasks:
         return
     try:
-        index = int(input("Enter task number to delete"))
+        index = int(input("Enter task number to delete")) -1
         if index < 0 or index >= len(tasks):
             print("vallid number")
         else:
-            removed = tasks.opp(index)
+            removed = tasks.pop(index)
             print(f"{removed['task']} delete sucssfully")
     except ValueError:
         print("vallid number")
