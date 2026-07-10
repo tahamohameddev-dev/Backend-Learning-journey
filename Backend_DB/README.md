@@ -10,8 +10,9 @@
 |Your 5 best frinds|Tis powerpoint|
 |Facebooks User Base|Computer Sectoin|
 
-## Database Management Systems (DBMS)
 
-# A special software program that helps users create and maintain a database
+# Database Management Systems (DBMS)
+
+## A special software program that helps users create and maintain a database
 
 - Makes it easy to manage large amount of informatoin
