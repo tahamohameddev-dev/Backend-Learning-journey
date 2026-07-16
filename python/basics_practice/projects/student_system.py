@@ -59,4 +59,16 @@ def delete_student():
             remove = students.pop(index)
             print(f"delete {remove["name"]} successfully!")
 
-def 
+def Average_Grade():
+    view_student()
+    if not students:
+        return
+    try:
+        total_grages = 0
+        for student in students:
+            total_grages += student["grade"]
+        average = total_grages / len(students)
+        print(f"the average is {average} !")
+    except ValueError:
+        print("Enter vallid number!!")
+
