@@ -59,7 +59,22 @@ def delete_student():
             remove = students.pop(index)
             print(f"delete {remove["name"]} successfully!")
 
-def Average_Grade():
+def update_grade():
+    view_student()
+    if not students:
+        return
+    try:
+        update = input("Enter youre name student for update grade: ")
+        for student in students:
+            if update == student["name"]:
+                new_grade = int(input("Enter your new grade: "))
+                student["grade"] = new_grade
+            print("update successfully!")
+        print("Student not found!")
+    except ValueError:
+        print("Enter try vallid name !")
+
+def average_grade():
     view_student()
     if not students:
         return
@@ -72,3 +87,14 @@ def Average_Grade():
     except ValueError:
         print("Enter vallid number!!")
 
+def top_student():
+    if not students:
+        return
+    top = students[0]
+    for student in students:
+        if student["grade"] > top["grade"]:
+            top = student
+    print(top)
+
+while True:
+    choice = input("Enter choice ")
