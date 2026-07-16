@@ -1,15 +1,5 @@
-# ===== Student Management System =====
 
-# 1. Add Student
-# 2. View Students
-# 3. Search Student
-# 4. Delete Student
-# 5. Update Student Grade
-# 6. Show Average Grade
-# 7. Show Top Student
-# 8. Exit
-
-# ===== Student Management System =====
+# ===== Student Management System ====
 
 print("\nStudent Management System")
 print("1. Add Student")
@@ -97,4 +87,23 @@ def top_student():
     print(top)
 
 while True:
+    view_student()
     choice = input("Enter choice ")
+    if choice == '1':
+        add_student()
+    elif choice == '2':
+        view_student()
+    elif choice == '3':
+        serch_student()
+    elif choice == '4':
+        delete_student()
+    elif choice == '5':
+        update_grade()
+    elif choice == '6':
+        average_grade()
+    elif choice == '7':
+        top_student()
+    elif choice == '8':
+        print("Goodby!!")
+        break
+
