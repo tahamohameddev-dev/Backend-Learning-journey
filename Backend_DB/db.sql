@@ -1,8 +1,6 @@
 
-CREATE TABLE branch (
-    branch_id INT PRIMARY KEY,
-    branch_name VARCHAR(100),
-    mgr_id INT,
-    mgr_start_date DATE,
-    FOREIGN KEY(mgr_id) REFERENCES employee(emp_id) ON DELETE SET NULL
-);
+--find the total sales of each salesman
+
+SELECT SUM(total_sales), client_id
+FROM work_with
+GROUP BY client_id;
