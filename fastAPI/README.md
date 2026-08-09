@@ -18,6 +18,7 @@
 ``` uvicorn basics_crud:app --reload
 
 
+ psycopg2
 
 
 
